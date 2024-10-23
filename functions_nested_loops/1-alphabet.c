@@ -3,7 +3,6 @@
 #include "main.h"
 /**
  * print_alphabet - ooo
- * @i: i
  */
 void print_alphabet(void)
 {
