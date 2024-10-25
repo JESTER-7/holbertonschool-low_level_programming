@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _abs - ooo
- * @int: ooo
+ * @n: ooo
  * Return: ooo
  */
 int _abs(int n)
