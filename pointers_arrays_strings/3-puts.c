@@ -8,7 +8,7 @@ void _puts(char *str)
 {
 	long unsigned int a = 0;
 
-	while(str[a])
+	while (str[a])
 	{
 		_putchar(str[a]);
 		a++;
