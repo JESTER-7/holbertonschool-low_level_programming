@@ -6,7 +6,7 @@
  */
 void _puts(char *str)
 {
-	long unsigned int a = 0;
+	unsigned int long a = 0;
 
 	while (str[a])
 	{
