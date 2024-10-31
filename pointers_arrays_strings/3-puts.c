@@ -6,9 +6,12 @@
  */
 void _puts(char *str)
 {
-	long unsigned int a;
+	long unsigned int a = 0;
 
-	for (a = 0; a < strlen(str); a++)
-		_putchar(a[str]);
+	while(str[a])
+	{
+		_putchar(str[a]);
+		a++;
+	}
 	_putchar('\n');
 }
