@@ -7,13 +7,12 @@
 char *cap_string(char *str)
 {
 	int a = 0;
+	char separators[] = " \t\n,;.!?\"(){}";
 
 	if (str[a] >= 'a' && str[a] <= 'z')
 	{
 		str[a] -= 32;
 	}
-	char separators[] = " \t\n,;.!?\"(){}";
-	
 	for (a = 1; str[a] != '\0'; a++)
 	{
 		int b;
