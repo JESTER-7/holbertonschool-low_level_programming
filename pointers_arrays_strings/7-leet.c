@@ -17,7 +17,10 @@ char *leet(char *s)
 		for (b = 0; b <= 9; b++)
 		{
 			if (s[a] == letters[b])
+			{
 				s[a] = numbers[b / 2];
+				break;
+			}
 		}
 	}
 	return (s);
