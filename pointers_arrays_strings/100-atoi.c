@@ -14,9 +14,11 @@ int _atoi(char *s)
 			signe *= -1;
 
 		else if (*s >= '0' && *s <= '9')
-			nombre = (nombre * 10) + (*s - '0'); /* passe le nombre en entier au lieu du char*/
+			nombre = (nombre * 10) + (*s - '0'); 
+		/* passe le nombre en entier au lieu du char*/
 
-		else if (nombre > 0) /* si c'est autre chose qu'un entier on recommence la boucle*/
+		else if (nombre > 0) 
+			/* si c'est autre chose qu'un entier on recommence la boucle*/
 			break;
 
 	} while (*s++);
