@@ -6,16 +6,8 @@
  */
 int _sqrt_recursion(int n)
 {
-    float sqrt;
-    sqrt = n / 2;
-
     if (n < 0)
-    {
         return (-1);
-    }
     else
-    {
-        return (n * _sqrt_recursion(n, sqrt - 1));
-    }
-
+        return (n * _sqrt_recursion(n - 1));
 }
