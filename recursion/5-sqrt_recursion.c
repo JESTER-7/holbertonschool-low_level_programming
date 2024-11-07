@@ -3,6 +3,7 @@
  * variable - verify the square root
  * @a: just a variable
  * @n: ooo
+ * Return: variable
  */
 int variable(int a, int n)
 {
