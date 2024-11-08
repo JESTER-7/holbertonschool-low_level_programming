@@ -5,9 +5,9 @@
  */
 void print_argc(int n)
 {
-    if (n / 10 != 0)
-        print_argc(n / 10);
-    _putchar((n % 10) + '0');
+	if (n / 10 != 0)
+		print_argc(n / 10);
+	_putchar((n % 10) + '0');
 }
 /**
  * main - Entry point of the program
@@ -17,8 +17,8 @@ void print_argc(int n)
  */
 int main(int argc, char *argv[])
 {
-    (void) argv;  /*delete unused variable*/
-    print_argc(argc - 1);
-    _putchar('\n');
-    return (0);
+	(void) argv;  /*delete unused variable*/
+	print_argc(argc - 1);
+	_putchar('\n');
+	return (0);
 }
