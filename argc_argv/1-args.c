@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * print_number - Recursively find the last digit and print n
+ * print_argc - Recursively find the last digit and print n
  * @n: The integer
- * Return: void
  */
 void print_argc(int n)
 {
