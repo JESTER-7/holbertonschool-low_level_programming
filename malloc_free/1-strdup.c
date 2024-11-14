@@ -9,12 +9,12 @@ char *_strdup(char *str)
 	char *duplicate;
 	int a;
 	int b = 0;
-	
+
 	if (str == NULL)
 		return (NULL);
 	while (str[b] != '\0')
 		b++;
-	duplicate = malloc(sizeof(char) * (b + 1)); /* +1 including the null operator */
+	duplicate = malloc(sizeof(char) * (b + 1)); /*+1 including the null operator*/
 	if (duplicate == NULL)
 		return (NULL);
 	for (a = 0; a < b; a++)
