@@ -1,4 +1,5 @@
 #include "dog.h"
+#include "1-init_dog.c"
 #include "../pointers_arrays_strings/2-strlen.c"
 #include "../pointers_arrays_strings/9-strcpy.c"
 /**
