@@ -12,14 +12,16 @@ char *str_concat(char *s1, char *s2)
 	int b = 0;
 	int i, j;
 
-	if (s1 == NULL)
-		return ("");
-	if (s2 == NULL)
-		return ("");
-	while (s1[a] != '\0')
-		a++;
-	while (s2[b] != '\0')
-		b++;
+	if (s1 != NULL)
+	{
+		for (a = 0; s1[a]; a++)
+			;
+	}
+	if (s2 != NULL)
+	{
+		for (b = 0; s2[b]; b++)
+			;
+	}
 	final_string = malloc(sizeof(char) * (a + b + 1));
 	if (final_string == NULL)
 		return (NULL);
