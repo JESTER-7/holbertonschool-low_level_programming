@@ -1,4 +1,6 @@
 #include "dog.h"
+#include "../pointers_arrays_strings/2-strlen.c"
+#include "../pointers_arrays_strings/9-strcpy.c"
 /**
  * new_dog - create a new dog
  * @name: new name
@@ -17,21 +19,21 @@ dog_t *new_dog(char *name, float age, char *owner)
     dog = malloc(sizeof(dog_t));
     if (dog == NULL)
         return(NULL);
-    cpy_name = malloc(strlen(name) + 1);
+    cpy_name = malloc(_strlen(name) + 1);
     if (cpy_name == NULL)
     {
         free(dog);
         return (NULL);
     }
-    strcpy(cpy_name, name);
-    cpy_owner = malloc(strlen(owner) + 1);
+    _strcpy(cpy_name, name);
+    cpy_owner = malloc(_strlen(owner) + 1);
     if (cpy_owner == NULL)
     {
         free(cpy_name);
         free(dog);
         return (NULL);
     }
-    strcpy(cpy_name, name);
+    _strcpy(cpy_name, name);
     dog->name = cpy_name;
     dog->owner = cpy_owner;
     dog->age = age;
