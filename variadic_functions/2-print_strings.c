@@ -9,10 +9,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list s;
 	unsigned int a = 0;
 	char *b;
-	va_start (s, n);
+
+	va_start(s, n);
 	while (a < n)
 	{
-		b = va_arg (s, char *);
+		b = va_arg(s, char *);
 		if (b == NULL)
 			printf ("(nil)");
 		else
@@ -25,5 +26,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		a++;
 	}
 	printf("\n");
-	va_end (s);
+	va_end(s);
 }
