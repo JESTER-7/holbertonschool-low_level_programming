@@ -62,7 +62,7 @@ void print_all(const char * const format, ...)
 	char *s = "";
 
 	/**
-	 * structur all - ooo
+	 * @all: ooo
 	 */
 	structur all[] = {
 		{"c", print_char},
