@@ -1,17 +1,17 @@
 #include "variadic_functions.h"
 /**
- * print_numbers - print numbers
+ * print_strings - print strings
  * @separator: string between numbers
- * @n: number of integers
+ * @n: number of strings
  */
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list s;
 	unsigned int a = 0;
 	va_start (s, n);
 	while (a < n)
 	{
-		printf("%d", va_arg (s, int));
+		printf("%s", va_arg (s, char *));
 		if (a < n - 1)
 		{
 			if (separator != NULL)
