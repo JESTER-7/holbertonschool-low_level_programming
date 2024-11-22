@@ -1,5 +1,6 @@
 #ifndef VARIADIC
 #define VARIADIC
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -9,11 +10,11 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 int _putchar(char c);
 
-/**
- * struct structur - ooo
- * @c: o
- * @function: ooo
- */
+#endif
+
+#ifndef ALED
+#define ALED
+
 typedef struct structur
 {
 	char *c;
@@ -24,4 +25,5 @@ void print_int(va_list uwu);
 void print_float(va_list uwu);
 void print_char(va_list uwu);
 void print_string(va_list uwu);
+
 #endif
