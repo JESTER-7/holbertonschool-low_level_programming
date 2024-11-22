@@ -68,7 +68,7 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 	va_list uwu;
-	
+
 	va_start(uwu, format);
 	while (format != NULL && format[b] != '\0')
 	{
