@@ -58,7 +58,6 @@ void print_all(const char * const format, ...)
 {
 	int a = 0;
 	int b = 0;
-	va_list uwu;
 	char *s = "";
 
 	structur all[] = {
@@ -68,6 +67,8 @@ void print_all(const char * const format, ...)
 		{"f", print_float},
 		{NULL, NULL}
 	};
+	va_list uwu;
+	
 	va_start(uwu, format);
 	while (format != NULL && format[b] != '\0')
 	{
