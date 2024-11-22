@@ -13,7 +13,7 @@ typedef struct structur
 {
 	char *c;
 	void (*function)(va_list uwu);
-} s;
+} structur;
 
 void print_int(va_list uwu);
 void print_float(va_list uwu);
