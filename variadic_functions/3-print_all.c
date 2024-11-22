@@ -52,10 +52,6 @@ void print_float(va_list uwu)
 
 /**
  * print_all - print the result
- * print_char - print char
- * print_int -
- * print_string -
- * print_float -
  * @format: check the format
  */
 void print_all(const char * const format, ...)
