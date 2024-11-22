@@ -53,7 +53,7 @@ void print_float(va_list uwu)
 /**
  * print_all - print the result
  * @format: check the format
- * Return: o
+ * structur all - ooo
  */
 void print_all(const char * const format, ...)
 {
