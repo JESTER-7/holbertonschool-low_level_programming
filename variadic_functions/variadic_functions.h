@@ -9,16 +9,11 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 int _putchar(char c);
 
-/**
- * struct s - choose the type
- * @c: verify
- * @function: choose the function
- */
-typedef struct s
+typedef struct structur
 {
 	char *c;
 	void (*function)(va_list uwu);
-} structur;
+} s;
 
 void print_int(va_list uwu);
 void print_float(va_list uwu);
