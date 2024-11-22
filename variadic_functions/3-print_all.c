@@ -2,38 +2,30 @@
 
 /**
  * print_int - print an int
- * @uwu: list of argument
- * Return: void
+ * @uwu: argument
  */
-
 void print_int(va_list uwu)
 {
 	int i = va_arg(uwu, int);
 
 	printf("%d", i);
-
 }
 
 /**
  * print_char - print a char
- * @uwu: list of argument
- * Return: void
+ * @uwu: argument
  */
-
 void print_char(va_list uwu)
 {
 	int c = va_arg(uwu, int);
 
 	printf("%c", (char)c);
-
 }
 
 /**
  *  print_string - print a string
- *  @uwu: list of argument
- *  Return: void
+ *  @uwu: argument
  */
-
 void print_string(va_list uwu)
 {
 	char *s = va_arg(uwu, char*);
@@ -44,31 +36,24 @@ void print_string(va_list uwu)
 		return;
 	}
 	printf("%s", s);
-
 }
 
 /**
  * print_float - print a float
- * @uwu: list of argument
- * Return: void
+ * @uwu: argument
  */
-
 void print_float(va_list uwu)
 {
 	double f;
 
 	f = va_arg(uwu, double);
-
 	printf("%f", (float)f);
-
 }
 
 /**
  * print_all - print the result
  * @format: check the format
- * Return: return void
  */
-
 void print_all(const char * const format, ...)
 {
 	int a = 0;
@@ -83,7 +68,6 @@ void print_all(const char * const format, ...)
 		{"f", print_float},
 		{NULL, NULL}
 	};
-
 	va_start(uwu, format);
 	while (format != NULL && format[b] != '\0')
 	{
