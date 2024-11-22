@@ -52,8 +52,8 @@ void print_float(va_list uwu)
 
 /**
  * print_all - print the result
- * struct str - s
  * @format: check the format
+ * struct str - s
  */
 void print_all(const char * const format, ...)
 {
