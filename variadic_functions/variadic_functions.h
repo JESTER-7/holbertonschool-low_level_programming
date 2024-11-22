@@ -8,4 +8,20 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 int _putchar(char c);
+
+/**
+ * typedef struct - choose the type
+ * @c: verify
+ * @function: choose the function
+ */
+typedef struct s
+{
+	char *c;
+	void (*function)(va_list uwu);
+} structur;
+
+void print_int(va_list uwu);
+void print_float(va_list uwu);
+void print_char(va_list uwu);
+void print_string(va_list uwu);
 #endif
