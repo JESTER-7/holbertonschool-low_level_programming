@@ -61,9 +61,6 @@ void print_all(const char * const format, ...)
 	int b = 0;
 	char *s = "";
 
-	/**
-	 * @all: ooo
-	 */
 	structur all[] = {
 		{"c", print_char},
 		{"i", print_int},
