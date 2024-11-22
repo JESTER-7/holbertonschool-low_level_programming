@@ -14,7 +14,11 @@ int _putchar(char c);
 
 #ifndef ALED
 #define ALED
-
+/**
+ * struct str - s
+ * @c: o
+ * @function: o
+ */
 typedef struct str
 {
 	char *c;
