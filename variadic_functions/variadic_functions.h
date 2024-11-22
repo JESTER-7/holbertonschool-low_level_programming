@@ -15,7 +15,7 @@ int _putchar(char c);
 #ifndef ALED
 #define ALED
 
-typedef struct structur
+typedef struct str
 {
 	char *c;
 	void (*function)(va_list uwu);
