@@ -8,10 +8,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list s;
 	unsigned int a = 0;
+	char *b;
 	va_start (s, n);
 	while (a < n)
 	{
-		printf("%s", va_arg (s, char *));
+		b = va_arg (s, char *);
+		if (b == NULL)
+			printf ("(nil)");
+		else
+			printf("%s", b);
 		if (a < n - 1)
 		{
 			if (separator != NULL)
