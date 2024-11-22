@@ -2,12 +2,15 @@
 /**
  * sum_them_all - sum all the int
  * @n: all the int
+ * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
     va_list s;
+
     int sum = 0;
     unsigned int a;
+
     if (n == 0)
         return (0);
     va_start (s, n);
